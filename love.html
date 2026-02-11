@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>7 Love Envelopes 💙</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  background:radial-gradient(circle at top,#0b3d91,#001a33);
+  color:white;
+  font-family:'Segoe UI',sans-serif;
+  text-align:center;
+  overflow-x:hidden;
+}
+h1{margin:20px 0;color:#bfe9ff;text-shadow:0 0 15px #5ab9ff;}
+.envelopes-layout{display:flex;justify-content:space-between;gap:20px;max-width:1100px;margin:0 auto;padding:20px;}
+.col{width:48%;display:flex;flex-direction:column;gap:30px;}
+.envelope{
+  position:relative;
+  width:100%;
+  background:linear-gradient(135deg,#cfeeff,#9fd4ff);
+  border-radius:14px;
+  padding:90px 20px 20px;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+  cursor:pointer;
+  overflow:hidden;
+  transition:transform .6s ease, box-shadow .6s ease;
+}
+.envelope:hover{transform:scale(1.02);}
+.envelope.open{transform:scale(1.05);box-shadow:0 18px 45px rgba(0,0,0,.7);}
+.envelope::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:60%;
+  background:linear-gradient(135deg,#9fd4ff,#6fbfff);
+  clip-path:polygon(0 100%,100% 100%,100% 0,50% 60%,0 0);
+  z-index:1;
+}
+.env-title{
+  position:absolute;
+  top:14px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:4;
+  font-weight:700;
+  color:white;
+  text-shadow:0 2px 8px rgba(0,0,0,.6);
+}
+.paper{
+  position:relative;
+  background:#ffffff;
+  color:#002244;
+  border-radius:10px;
+  padding:24px;
+  box-shadow:inset 0 0 10px rgba(0,0,0,.12);
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transform:translateY(30px) scale(.95);
+  transition:max-height 1.2s ease, opacity .8s ease, transform .8s ease;
+  z-index:2;
+}
+.envelope.open .paper{
+  max-height:5000px;
+  opacity:1;
+  transform:translateY(0) scale(1);
+}
+.paper p{font-size:17px;line-height:1.9;margin:0;}
+.compliments-section{margin:220px auto;max-width:800px;padding:20px;}
+.compliments-section h2{color:#fff;text-shadow:0 0 12px #7ec8ff;margin-bottom:30px;}
+.compliments-list p{font-size:16px;line-height:2;margin:6px 0;color:white;}
+.proposal-zone{margin:250px auto 200px;display:flex;justify-content:center;}
+.envelope.proposal{max-width:520px;}
+@media(max-width:800px){
+  .envelopes-layout{flex-direction:column;}
+  .col{width:100%;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>💙 7 Love Envelopes For You 💙</h1>
+
+<div class="envelopes-layout">
+
+<div class="col left">
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">🎉 Happy 4 Months Anniversary</div>
+    <div class="paper"><p>Happy 4 months to us, my love 💙🎉 Four beautiful months of choosing each other every single day 🤝❤️ Four months of learning what real love feels like 🫶 Four months of laughter 😄, deep talks 💬, late nights 🌙, and warm mornings ☀️ with you in my thoughts. These months with you have changed me in the best way 🥹💞 You taught me patience, understanding, loyalty, and what it means to truly care for someone ❤️ I’m so proud of us — proud of how we stay, how we fight for each other, and how we keep choosing love 🌍💫 Thank you for being my peace 🕊️ my comfort 🏡 my happiness 😌 and my person 💙 This is only the beginning of our story 📖✨ and I can’t wait to build a whole lifetime with you — month by month 📆 year by year 🗓️ forever and always ♾️💍💞</p></div>
+  </div>
+
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">🌸 Your Beauty</div>
+    <div class="paper"><p>You are beautiful in a way that can’t be copied 🌺💫 It’s not just your smile 😍, your eyes 👀✨, or the way you move through the world… it’s your energy, your heart ❤️, your soul 🫶 When you walk into a room, everything feels lighter 🌍💗 You glow without even trying 🌟 You carry a kind of beauty that reaches straight into my heart ❤️🔥 You’re not just pretty — you’re breathtaking in the way you love, care, and exist 🥹 I look at you and I see art 🎨, magic 🪄, and home 🏡 all at once 💞</p></div>
+  </div>
+
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">💪 Your Strength</div>
+    <div class="paper"><p>You are strong in ways most people will never understand 💪👑 You carry so much and still keep going forward 🌊🔥 Even when life gets heavy, you don’t quit — you rise 🌅 Watching you chase your dreams, face your fears, and stand tall makes me admire you more every day 🥹🌟 You inspire me without even trying 💙 You make me want to be better, stronger, and more patient just by loving you ❤️</p></div>
+  </div>
+</div>
+
+<div class="col right">
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">❤️ How I Love You</div>
+    <div class="paper"><p>I love you in a way that’s calm and wild at the same time 🌊🔥 I love you in the quiet moments 🤍 and in the loud laughter 😄 You’re my peace 🕊️ my comfort 🏡 and my safe place 💞 Loving you feels natural, easy, and right ❤️ You’re not just my girlfriend — you’re my heart, my home, my forever ♾️💙</p></div>
+  </div>
+
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">👨‍👩‍👧 Our Future</div>
+    <div class="paper"><p>When I think about the future, I don’t see it alone — I see it with you 🌍💍 I see us growing, building, dreaming, and choosing each other every day 💞 I see laughter 😄, late nights 🌙, quiet mornings ☀️, and a life full of love ❤️ You’re not just in my present — you’re in every version of my future 🥹🌟</p></div>
+  </div>
+
+  <div class="envelope" onclick="openEnvelope(this)">
+    <div class="env-title">⚖️ Your Lawyer Dream</div>
+    <div class="paper"><p>I believe in you and your dream to become a lawyer with everything in me ⚖️💙 You are smart 🧠 strong 💪 and capable of greatness 👑 One day you’re going to change lives, stand tall, and make the world better just by being you 🌍✨ And I’ll be right there, supporting you, loving you, and cheering for you louder than anyone 🎉💞</p></div>
+  </div>
+</div>
+
+</div>
+
+<!-- 💯 COMPLIMENTS SECTION -->
+<div class="compliments-section">
+  <h2>💯 100 Things I Love About You 💙</h2>
+  <div class="compliments-list">
+    <p>1. Your smile 😍</p>
+    <p>2. Your laugh 😄</p>
+    <p>3. Your eyes ✨</p>
+    <p>4. Your voice 🎶</p>
+    <p>5. Your kindness 💖</p>
+    <p>6. Your heart ❤️</p>
+    <p>7. Your loyalty 🤞</p>
+    <p>8. Your honesty 🌟</p>
+    <p>9. Your strength 💪</p>
+    <p>10. Your patience 🕊️</p>
+    <p>11. Your courage 👑</p>
+    <p>12. Your passion 🔥</p>
+    <p>13. Your intelligence 🧠</p>
+    <p>14. Your creativity 🎨</p>
+    <p>15. Your confidence 💃</p>
+    <p>16. Your warmth ☀️</p>
+    <p>17. Your care 🫶</p>
+    <p>18. Your support 🤍</p>
+    <p>19. Your ambition 🚀</p>
+    <p>20. Your soul 💫</p>
+    <p>21. The way you listen 👂</p>
+    <p>22. The way you love 💞</p>
+    <p>23. The way you try 🌈</p>
+    <p>24. The way you grow 🌱</p>
+    <p>25. The way you smile at me 😊</p>
+    <p>26. The way you care about others 💕</p>
+    <p>27. The way you dream big 🌍</p>
+    <p>28. The way you inspire me ✨</p>
+    <p>29. The way you stay strong 💪</p>
+    <p>30. The way you forgive 🤍</p>
+    <p>31. Your faith in me 🙏</p>
+    <p>32. Your soft heart 💗</p>
+    <p>33. Your beautiful mind 🧠✨</p>
+    <p>34. Your loving energy 🌟</p>
+    <p>35. Your peaceful presence 🕊️</p>
+    <p>36. Your sweet words 🍯</p>
+    <p>37. Your warm hugs 🤗</p>
+    <p>38. Your cute habits 😚</p>
+    <p>39. Your unique soul 💫</p>
+    <p>40. Your pure intentions 🤍</p>
+    <p>41. Your big heart ❤️</p>
+    <p>42. Your honesty always 🌟</p>
+    <p>43. Your beautiful dreams 🌌</p>
+    <p>44. Your caring nature 🫶</p>
+    <p>45. Your loving touch 🤍</p>
+    <p>46. Your positive mind ☀️</p>
+    <p>47. Your strong will 💪</p>
+    <p>48. Your loyal soul 🐺</p>
+    <p>49. Your gentle voice 🎵</p>
+    <p>50. Your amazing spirit ✨</p>
+    <p>51. Your confidence 👑</p>
+    <p>52. Your determination 🚀</p>
+    <p>53. Your honesty with me 💙</p>
+    <p>54. Your support always 🤝</p>
+    <p>55. Your smile in the morning ☀️</p>
+    <p>56. Your laugh at night 🌙</p>
+    <p>57. Your loving heart ❤️</p>
+    <p>58. Your caring soul 💫</p>
+    <p>59. Your strong mindset 🧠</p>
+    <p>60. Your pure love 💞</p>
+    <p>61. Your patience with me 🕊️</p>
+    <p>62. Your kindness to others 🤍</p>
+    <p>63. Your beautiful personality 🌸</p>
+    <p>64. Your loyalty to us 💍</p>
+    <p>65. Your emotional strength 💪</p>
+    <p>66. Your peaceful energy 🌿</p>
+    <p>67. Your loving heart ❤️</p>
+    <p>68. Your cute smile 😊</p>
+    <p>69. Your soft voice 🎶</p>
+    <p>70. Your strong faith 🙏</p>
+    <p>71. Your caring hands 🤲</p>
+    <p>72. Your warm hugs 🤗</p>
+    <p>73. Your gentle love 💗</p>
+    <p>74. Your amazing mind 🧠✨</p>
+    <p>75. Your honest soul 🌟</p>
+    <p>76. Your brave heart 👑</p>
+    <p>77. Your loyal love 💞</p>
+    <p>78. Your bright energy ☀️</p>
+    <p>79. Your deep care 🤍</p>
+    <p>80. Your beautiful dreams 🌌</p>
+    <p>81. Your peaceful heart 🕊️</p>
+    <p>82. Your cute reactions 😄</p>
+    <p>83. Your loving words 💬</p>
+    <p>84. Your strong soul 💪</p>
+    <p>85. Your gentle touch 🤍</p>
+    <p>86. Your honest heart ❤️</p>
+    <p>87. Your amazing effort 🚀</p>
+    <p>88. Your caring eyes 👀</p>
+    <p>89. Your sweet heart 💗</p>
+    <p>90. Your warm love 🔥</p>
+    <p>91. Your peaceful mind 🧠</p>
+    <p>92. Your kind soul 🌸</p>
+    <p>93. Your loving presence 💞</p>
+    <p>94. Your bright smile 😁</p>
+    <p>95. Your strong love 💍</p>
+    <p>96. Your deep heart ❤️</p>
+    <p>97. Your gentle spirit ✨</p>
+    <p>98. Your beautiful soul 💫</p>
+    <p>99. Your true love 💙</p>
+    <p>100. YOU — just being you 🥹❤️</p>
+  </div>
+</div>
+
+<!-- 💍 FINAL ENVELOPE -->
+<div class="proposal-zone">
+  <div class="envelope proposal" onclick="openEnvelope(this)">
+    <div class="env-title">💍 The Question</div>
+    <div class="paper">
+      <p>
+My love… 🥹❤️ after everything we’ve been through — every laugh 😄 every memory 📸 every moment ⏳ — I know one thing for sure: you are the one for me 💙 You are my heart ❤️ my peace 🕊️ my future 💍 and my home 🏡 I don’t just want you in my life… I want to build my whole life with you 🤝✨  
+
+So here it is, straight from my soul to yours…  
+Will you be my forever? 💍🥹💖  
+Will you be my wife? 👰‍♀️❤️  
+Will you walk this life with me, always? ♾️💙
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+function openEnvelope(el){
+  el.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
